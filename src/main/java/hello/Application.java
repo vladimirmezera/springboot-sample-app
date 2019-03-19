@@ -5,14 +5,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.bind.RelaxedPropertyResolver;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import java.net.InetAddress;
 
 @SpringBootApplication
 @RestController
 public class Application {
 
 	@RequestMapping("/")
-	public String home() {
-		return "Hello Openshift World";
+	public String home() throws Exception {
+		return "Hello Openshift World. " + InetAddress.getLocalHost().getHostName();
 	}
 
 
