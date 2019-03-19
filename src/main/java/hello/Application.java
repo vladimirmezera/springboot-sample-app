@@ -13,9 +13,8 @@ public class Application {
 
 	@RequestMapping("/")
 	public String home() throws Exception {
-		return "Hello Openshift World. " + InetAddress.getLocalHost().getHostName();
+		return "Hello Openshift World. Rel2: " + InetAddress.getLocalHost().getHostName();
 	}
-
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
