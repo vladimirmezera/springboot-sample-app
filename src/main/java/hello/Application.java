@@ -13,7 +13,7 @@ public class Application {
 
 	@RequestMapping("/")
 	public String home() throws Exception {
-		return "Hello Openshift World. Rel2: " + InetAddress.getLocalHost().getHostName();
+		return "Hello MAKRO World: " + InetAddress.getLocalHost().getHostName();
 	}
 
 	public static void main(String[] args) {
